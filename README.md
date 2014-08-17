@@ -1,4 +1,4 @@
-With `interfaces`, you can define Interfaces in Ruby# Interfaces
+## Introduction
 
 Interfaces (shockingly enough) lets you define interfaces in Ruby. It
 lets you say (in code) that for a class to implement an interface, it
@@ -34,6 +34,18 @@ class Collection
   implement Enumerable
 end
 ```
+
+Now, our `Collection` class has access to the rest of methods defined
+in `Enumerable`. But if we tried
+
+```ruby
+class BadCollection
+  implement Enumerable
+end
+```
+
+then it would blow up in our faces.
+
 
 ## Installation
 
