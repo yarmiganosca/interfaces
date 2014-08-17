@@ -29,11 +29,19 @@ describe Interfaces do
     A.new.whatsit.must_equal 6
   end
 
-  class B
-    implement Thingable
-  end
+  describe "when the required methods aren't implemented by the including class" do
+    let(:attempt) do
+      proc do
+        class B
+          implement Thingable
+        end
+      end
+    end
 
-  it "doesn't extend the implementing class if the required methods aren't defined" do
-    B.new.wont_respond_to :whatsit
+    it 'raises an error' do
+      error = attempt.must_raise RequiredMethodsNotImplementedError
+
+      error.message.must_match 'thingy'
+    end
   end
 end
