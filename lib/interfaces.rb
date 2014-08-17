@@ -1,5 +1,3 @@
 require "interfaces/version"
-
-module Interfaces
-  # Your code goes here...
-end
+require 'interfaces/ext/kernel'
+require 'interfaces/ext/class'
