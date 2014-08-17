@@ -25,6 +25,12 @@ interface :Enoomerable do
 end
 
 class Collection
+  def initialize(*items)
+    @items = items
+  end
+
+  attr_reader :items
+
   def each
     for item in items
       yield item

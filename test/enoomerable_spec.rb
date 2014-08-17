@@ -6,6 +6,7 @@ describe Enoomerable do
     def initialize(*items)
       @items = items
     end
+
     attr_reader :items
 
     def each
