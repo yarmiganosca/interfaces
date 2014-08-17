@@ -8,20 +8,18 @@ has to respond to specific messages. Here's a fake rewrite of
 ```ruby
 require 'interfaces'
 
-interface :Enumerable do
+interface :Enoomerable do
   requires :each
 
   def map
     values = []
     
     each do |value|
-      values << yield
+      values << yield(value)
     end
     
     values
   end
-  
-  ...
 end
 
 class Collection
@@ -31,16 +29,16 @@ class Collection
     end
   end
   
-  implement Enumerable
+  implement Enoomerable
 end
 ```
 
 Now, our `Collection` class has access to the rest of methods defined
-in `Enumerable`. But if we tried
+in `Enoomerable`. But if we tried
 
 ```ruby
 class BadCollection
-  implement Enumerable
+  implement Enoomerable
 end
 ```
 
