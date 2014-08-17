@@ -26,7 +26,7 @@ end
 
 class Collection
   def each
-    for item in collection
+    for item in items
       yield item
     end
   end
