@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "interfaces"
   spec.version       = Interfaces::VERSION
   spec.authors       = ["Chris Hoffman"]
-  spec.email         = ["choffman@optoro.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["yarmiganosca@gmail.com"]
+  spec.summary       = "Create interfaces in Ruby."
+  spec.description   = "Create interfaces in Ruby."
+  spec.homepage      = "www.github.com/yarmiganosca/interfaces"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
