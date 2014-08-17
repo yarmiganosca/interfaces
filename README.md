@@ -1,8 +1,10 @@
 ## Introduction
 
 Interfaces (shockingly enough) lets you define interfaces in Ruby. It
-lets you say (in code) that for a class to implement an interface, it
-has to respond to specific messages. Here's a fake rewrite of
+lets you specify (in code) that for a class to implement an interface,
+it has to respond to specific messages.
+
+Here's a fake rewrite of
 `Enumerable` as an example:
 
 ```ruby
